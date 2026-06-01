@@ -28,6 +28,10 @@
   background-color: #fcfcfc;
   overflow: auto;
   border-radius: 4px;
+  box-shadow:
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 .close-popup {
   position: absolute;
@@ -36,15 +40,16 @@
   width: 24px;
   height: 24px;
   align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 24px;
+  fill: #2e2f42;
   background-color: #e7e9fc;
   cursor: pointer;
   padding: 6px;
   line-height: 0;
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-popup:hover,
@@ -88,7 +93,7 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   padding-left: 38px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icon {
@@ -96,9 +101,14 @@
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   border-radius: 4px;
   padding: 8px 16px;
   width: 100%;
@@ -106,14 +116,10 @@
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-textarea::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
 .input-text:focus,
@@ -124,7 +130,6 @@
 
 .input-text:focus + .form-icon {
   fill: #4d5ae5;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-wrapper {
   margin-bottom: 24px;
@@ -159,7 +164,15 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.checkbox-icon {
+  fill: #f4f4fd;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.native-checkbox:checked + .checkbox-label .custom-checkbox .checkbox-icon {
+  opacity: 1;
+}
 .color-policy {
   color: #4d5ae5;
   text-decoration-skip-ink: none;
@@ -169,6 +182,8 @@
   display: block;
   min-width: 169px;
   height: 56px;
+  font-size: 16px;
+  line-height: 1.5;
   margin-right: auto;
   margin-left: auto;
   cursor: pointer;
