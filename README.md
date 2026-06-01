@@ -1,2 +1,1 @@
-# goit-markup-hw-05
-form elements
+# goit-markup-hw-02

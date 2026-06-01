@@ -1,0 +1,21 @@
+.section-serv {
+  padding: 120px 0;
+}
+.container .section-cont {
+  margin: 0 auto;
+}
+.title-desc {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.text-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
