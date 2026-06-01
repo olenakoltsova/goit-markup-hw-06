@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--====== Header ======-->
-    <header class="header-page">
+    <header id="header" class="header-page">
       <div class="container header-container">
         <nav class="nav-page">
           <a class="logo header-logo" href="./index.html"
@@ -58,15 +58,16 @@
     </header>
     <!-- ====== Hero ====== -->
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="container hero-cont">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
         </div>
       </section>
-      <section class="section-serv">
+      <!-- #region Features -->
+      <section id="features" class="section-serv">
         <div class="container section-cont">
-          <h2 class="hero-desc visually-hidden">Advantages</h2>
+          <h2 class="hero-desc sr-only">Advantages</h2>
           <ul class="hero-list">
             <li class="hero-list-item">
               <div class="hero-svg-cont">
@@ -119,7 +120,8 @@
           </ul>
         </div>
       </section>
-      <section class="section-hero">
+      <!-- #region Team -->
+      <section id="team" class="section-hero">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="section-list">
@@ -295,7 +297,8 @@
           </ul>
         </div>
       </section>
-      <section class="section-tech">
+      <!-- #region Portfolio -->
+      <section id="portfolio" class="section-tech">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="tech-desc-title">
@@ -424,7 +427,7 @@
       </section>
     </main>
     <!-- ======Footer===== -->
-    <footer class="page-footer">
+    <footer id="footer" class="page-footer">
       <div class="container footer-container">
         <div class="footer-logo">
           <a class="logo footer-logo" href="./index.html"
@@ -470,7 +473,8 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <!----- #region Modal ------>
+    <div class="backdrop" id="modal">
       <div class="modal">
         <button class="close-popup" type="button">
           <svg width="8" height="8">
@@ -530,7 +534,7 @@
               type="checkbox"
               name="form-checkbox"
               id="form-checkbox"
-              class="native-checkbox visually-hidden"
+              class="native-checkbox sr-only"
             />
             <label for="form-checkbox" class="checkbox-label">
               <span class="custom-checkbox">

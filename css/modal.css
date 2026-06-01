@@ -9,10 +9,15 @@
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 999999999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.is-open {
+.backdrop.is-open {
   opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 
 .modal {
