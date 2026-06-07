@@ -2,23 +2,21 @@
   padding: 120px 0;
 }
 .section-tech-cont {
+  align-content: center;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
 .tech-desc-title {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  flex-direction: column;
+  gap: 48px;
 }
+
 .open-foto {
   position: relative;
   overflow: hidden;
-}
-.tech-desc {
-  width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tech-desc:hover .over-info {
@@ -54,18 +52,20 @@
   }
 
   .tech-desc {
-    min-width: 0;
-    max-width: none;
-    flex-basis: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
+  .section-tech {
+    padding: 120px 0;
+  }
+
   .tech-desc-title {
     gap: 48px 24px;
   }
-
   .tech-desc {
-    flex-basis: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

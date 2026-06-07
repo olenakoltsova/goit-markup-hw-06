@@ -10,7 +10,8 @@
 }
 .section-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
   text-align: center;
 }
 .section-item {
@@ -63,21 +64,20 @@
 }
 @media screen and (min-width: 768px) {
   .section-list {
-    padding: 0;
-
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 64px 24px;
     justify-content: center;
+    gap: 64px 24px;
   }
 }
 
 @media screen and (min-width: 1158px) {
-  .section-list {
-    gap: 24px;
+  .section-hero {
+    padding: 120px 0;
   }
 
-  .section-item {
-    flex-basis: calc((100% - 72px) / 4);
+  .section-list {
+    flex-wrap: nowrap;
+    gap: 24px;
   }
 }

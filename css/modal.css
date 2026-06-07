@@ -202,11 +202,9 @@
   background-color: #404bbf;
 }
 @media screen and (min-width: 768px) {
-  .backdrop .container {
-    padding: 0;
-  }
   .modal {
-    max-width: 408px;
-    padding: 72px 24px 24px;
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
