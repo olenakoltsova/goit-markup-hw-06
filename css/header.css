@@ -13,13 +13,14 @@
 }
 
 .nav-page {
-  display: none;
+  display: flex;
   margin-right: auto;
 }
 
 .contacts {
   display: none;
 }
+
 .nav-page .nav-item-link {
   font-weight: 500;
   font-size: 16px;
@@ -86,12 +87,6 @@
   font-style: normal;
 }
 
-.contacts-list {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
 .contacts-link {
   display: block;
   padding: 24px 0;
@@ -147,13 +142,13 @@
     display: block;
   }
 
-  .header-address {
+  .contacts-list {
     display: flex;
-    flex-direction: column;
     gap: 12px;
+    flex-direction: column;
   }
 
-  .contacts-list {
+  .contacts .list a {
     padding: 0;
     font-size: 12px;
     line-height: 1.17;
@@ -171,12 +166,7 @@
     align-items: center;
     gap: 40px;
   }
-
-  .contacts-list a {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-  }
+}
+.nav-item {
+  display: none;
 }
