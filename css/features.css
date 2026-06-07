@@ -18,4 +18,54 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-weight: 500;
+}
+@media screen and (max-width: 1157px) {
+  .title-desc {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title-desc {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .hero-list-item {
+    min-width: 356px;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .hero-list-item {
+    min-width: 0;
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .container .section-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+  }
 }

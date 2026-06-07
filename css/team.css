@@ -61,3 +61,23 @@
 .svg-socal-icon {
   fill: #f4f4fd;
 }
+@media screen and (min-width: 768px) {
+  .section-list {
+    padding: 0;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-list {
+    gap: 24px;
+  }
+
+  .section-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+}

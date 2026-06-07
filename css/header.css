@@ -104,3 +104,19 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* #endregion */
+@media screen and (min-width: 768px) {
+  .header-page .container .logo {
+    padding: 0;
+    margin-right: 120px;
+  }
+}
+.burger-menu {
+  display: none;
+}
+
+@media screen and (min-width: 1158px) {
+  .header-section .container {
+    padding: 0 15px;
+    max-width: 1158px;
+  }
+}
