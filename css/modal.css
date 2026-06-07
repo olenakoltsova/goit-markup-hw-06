@@ -22,9 +22,9 @@
 
 .modal {
   position: relative;
-  width: 408px;
-  min-height: 584px;
-  padding: 72px 24px 24px 24px;
+  width: 288px;
+  max-width: 100%;
+  padding: 72px 16px 24px 16px;
   background-color: #fcfcfc;
   overflow: auto;
   border-radius: 4px;

@@ -30,8 +30,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8;
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -44,10 +43,6 @@
 
   .hero-list-item {
     width: calc((100% - 24px) / 2);
-  }
-
-  .title-desc {
-    text-align: left;
   }
 }
 
