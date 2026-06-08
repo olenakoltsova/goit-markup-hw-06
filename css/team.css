@@ -1,5 +1,9 @@
+.section-hero {
+  padding: 96px 0;
+}
 .section-title {
   font-weight: 700;
+  justify-content: center;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -71,12 +75,10 @@
     gap: 64px 24px;
   }
 }
-
 @media screen and (min-width: 1158px) {
   .section-hero {
     padding: 120px 0;
   }
-
   .section-list {
     flex-wrap: nowrap;
     gap: 24px;
