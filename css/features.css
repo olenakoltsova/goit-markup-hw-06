@@ -34,6 +34,11 @@
   letter-spacing: 0.02em;
   color: #434455;
 }
+@media (min-width: 768px) {
+  h3.title-desc {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-list {
     flex-direction: row;

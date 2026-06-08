@@ -144,7 +144,11 @@
     padding-left: 108px;
     padding-right: 108px;
   }
-
+  .footer-subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
   .footer-logo {
     align-items: flex-start;
   }
