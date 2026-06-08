@@ -1,9 +1,6 @@
 .section-serv {
   padding: 96px 0;
 }
-.container .section-cont {
-  margin: 0 auto;
-}
 
 .hero-list {
   display: flex;
@@ -30,7 +27,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 8;
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
   color: #434455;
 }
