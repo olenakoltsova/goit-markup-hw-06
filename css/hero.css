@@ -10,7 +10,6 @@
   gap: 24px;
 }
 .hero-list-item {
-  justify-content: left;
   width: calc((100% - 72px) / 4);
 }
 .hero {
@@ -67,7 +66,6 @@
   height: 56px;
   border: none;
   padding: 16px 32px;
-  margin-top: 72px;
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
